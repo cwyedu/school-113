@@ -3,9 +3,11 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: `https://cwyedu.github.io/`,
+	base: `school-113`,
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: '揚揚教學網--113學年',
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},

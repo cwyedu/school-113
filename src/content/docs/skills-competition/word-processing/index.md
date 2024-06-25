@@ -1,6 +1,8 @@
 ---
-title: Example Guide
-description: A guide in my new Starlight docs site.
+title: 技藝競賽--文書處理
+description: skills competition with word processing
+sidebar:
+    order: 50
 ---
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.

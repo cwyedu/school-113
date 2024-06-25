@@ -8,20 +8,41 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '揚揚教學網--113學年',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
+			pagination: false,
 			sidebar: [
 				{
-					label: 'Guides',
+					label: '網站說明', link: '/des'
+				},
+				{
+					label: '技藝競賽',
+					collapsed: true,
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{
+							label: '文書處理',
+							autogenerate: {
+								directory: '/skills-competition/word-processing',
+							},
+						},
+						{
+							label: '程式設計',
+							autogenerate: { directory: '/skills-competition/programming' },
+						},
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: '重補修',
+					collapsed: true,
+					autogenerate: { directory: '/course-retake/' },
+				},
+				{
+					label: `軟體應用檢定`,
+					collapse: true,
+					items: [
+						{
+							label: `丙級`,
+							link: '/cert/cert3/'
+						},
+					],
 				},
 			],
 		}),

@@ -11,9 +11,6 @@ export default defineConfig({
 			pagination: false,
 			sidebar: [
 				{
-					label: '網站說明', link: '/des'
-				},
-				{
 					label: '技藝競賽',
 					collapsed: true,
 					items: [
